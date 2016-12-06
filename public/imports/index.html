@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Imports</title>
+</head>
+<body>
+    <script>
+        function show(id) {
+            const timer1 = document.getElementById(id).import;
+
+            document.body.appendChild(timer1.querySelector('time'));
+            document.body.appendChild(timer1.querySelector('description'));
+        };
+    </script>
+    <link rel="import" id="timer1" onload="show('timer1')" href="timer-1.html" />
+    <link rel="import" id="timer2" onload="show('timer2')" href="timer-2.html" />
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timer</title>
+    <link rel="stylesheet" type="text/css" href="./css/timer-2.css">
+</head>
+<body>
+    <time id="timer">0</time>
+    <description class="description">
+        Only works in Chrome by now. <a href="http://caniuse.com/#feat=imports">caniuse.com/#feat=imports</a>
+    </description>
+
+    <script>
+        {
+            const timerEl = document.currentScript.ownerDocument.getElementById('timer');
+            let i = 0;
+
+            window.setInterval(
+                () => {
+                    i += 0.1;
+                    timerEl.innerHTML = i;
+                },
+                1000
+            );
+        }
+    </script>
+</body>
+</html>
+
