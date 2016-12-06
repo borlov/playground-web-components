@@ -6,9 +6,6 @@
 </head>
 <body>
     <time id="timer">0</time>
-    <description class="description">
-        Only works in Chrome by now. <a href="http://caniuse.com/#feat=imports">caniuse.com/#feat=imports</a>
-    </description>
 
     <script>
         {
@@ -22,6 +19,8 @@
                 },
                 1000
             );
+
+            document.body.appendChild(timerEl);
         }
     </script>
 </body>
